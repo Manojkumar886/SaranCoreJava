@@ -11,7 +11,10 @@ public class PassingAnArrayValueInMethod
       //  System.out.println(StudName);
 
     }
-
+    public void basic(String name)
+    {
+        System.out.println("my name is "+name);
+    }
     public static void main(String[] args)
     {
         String[] StudentName={"Thivin","Saran","Vineth","Vimal","Apsheya","Haripriya"};
@@ -19,6 +22,7 @@ public class PassingAnArrayValueInMethod
         PassingAnArrayValueInMethod Passing=new PassingAnArrayValueInMethod();
         Passing.Passing(StudentName);
         System.out.println(Arrays.toString(StudentName));
+        Passing.basic("Saran");
 
     }
 }
